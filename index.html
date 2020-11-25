@@ -3,21 +3,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body, html {
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url('IMG_3806.jpeg');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  z-index: -10;
+  background: url('Chicagotop.jpeg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 </style>
@@ -114,7 +112,24 @@ body, html {
 
 </div>
 
-<img src='IMG_2315 2.jpeg' height="1200" width="1900" />
+<div class='transparent'>
+<style>
+h2 {
+    text-align:center;
+            font-size: 40pt;
+            padding-left: 27.2%;
+            width: 33%;
+
+}
+
+</style>
+    <h2>
+        <font color = "black" face = "Verdana" >About me!</font>
+        <br />
+        <font color = "black" face = "Verdana" >A long time agon in a galaxy far, far away... Nykolas was hard at work coding his first website!</font>
+    </h2>
+
+</div>
 
 </body>
 </html>
